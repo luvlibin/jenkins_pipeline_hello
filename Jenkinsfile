@@ -5,7 +5,12 @@ node {
 }
 node {
     stage('test'){
-        echo "testing"
+        echo "testing starts"
+    }
+}
+node {
+    stage('preprod'){
+        echo "move to preprod"
     }
 }
 stage('Get approval'){
